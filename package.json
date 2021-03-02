@@ -17,5 +17,6 @@
   "scripts": {
     "build": "tsc",
     "test": "jest"
-  }
+  },
+  "type": "module"
 }
