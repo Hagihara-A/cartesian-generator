@@ -1,6 +1,6 @@
 {
   "name": "cartesian-generator",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "produce cartesian-product using generator",
   "main": "build/cartesian.js",
   "license": "MIT",
