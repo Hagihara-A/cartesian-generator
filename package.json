@@ -1,10 +1,18 @@
 {
   "name": "cartesian-generator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "produce cartesian-product using generator",
   "main": "./build/cartesian.js",
   "types": "./build/cartesian.d.ts",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hagihara-A/cartesian-generator"
+  },
+  "keywords": [
+    "cartesian",
+    "cartesian product"
+  ],
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
@@ -18,10 +26,14 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "bench": "node ./bench.js"
+    "bench": "node ./bench.js",
+    "prepare": "tsc"
   },
   "type": "module",
   "engines": {
     "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
