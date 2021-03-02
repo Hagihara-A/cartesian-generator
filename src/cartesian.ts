@@ -1,5 +1,5 @@
-export function* cartesian<T extends number[][]>(
-  ...args: T
+export function* cartesian(
+  ...args: number[][]
 ): Generator<number[], void, undefined> {
   const len = args.length;
   const [head, ...rest] = args;
