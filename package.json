@@ -1,8 +1,8 @@
 {
   "name": "cartesian-generator",
   "version": "1.0.0",
-  "description": "produce cartesian product with generator",
-  "main": "index.js",
+  "description": "produce cartesian-product using generator",
+  "main": "build/cartesian.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.8",
@@ -16,7 +16,11 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "bench": "node ./bench.js"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=12"
+  }
 }
