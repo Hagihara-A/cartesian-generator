@@ -2,7 +2,8 @@
   "name": "cartesian-generator",
   "version": "0.0.0",
   "description": "produce cartesian-product using generator",
-  "main": "build/cartesian.js",
+  "main": "./build/cartesian.js",
+  "types": "./build/cartesian.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.8",
