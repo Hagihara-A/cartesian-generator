@@ -27,3 +27,8 @@ test("[0,1,2,3,4],[5,6],[7,8,9] => [0,5,7]@0, [0,5,9]@2, [0,6,9]@5, [4,6,9]@29",
     else if (i == 29) expect(curr.value).toEqual([4, 6, 9]);
   }
 });
+test("...[] => []", () => {
+  const prod = cartesian(...[]);
+  expect(prod.next().value).toEqual([]);
+  expect(prod.next().done).toBeTruthy();
+});
