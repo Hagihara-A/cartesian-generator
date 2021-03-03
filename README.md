@@ -61,6 +61,3 @@ I tested these two ways with 7 arguments that contains 10 elements, so length of
 __14% faster!!__
 
 When I tried bench with more arguments, function version caused memory leak, unlike generator.
-
-## Limits
-Currently, this package is typed only with array of number in Typescript(It should work with *array of object, string etc...* actually).If you want, revise code above. Or I might work on it if you post an issue.
