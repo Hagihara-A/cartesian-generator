@@ -1,6 +1,4 @@
-export function* cartesian(
-  ...args: number[][]
-): Generator<number[], void, undefined> {
+export function* cartesian<T>(...args: T[][]): Generator<T[], void, undefined> {
   if (args.length === 0) yield [];
   else {
     const [head, ...rest] = args;
