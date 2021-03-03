@@ -1,6 +1,6 @@
 {
   "name": "cartesian-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "produce cartesian-product using generator",
   "main": "./build/cartesian.js",
   "types": "./build/cartesian.d.ts",
