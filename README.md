@@ -59,10 +59,10 @@ for (const p of prod){
 I tested these two ways with 7 arguments that contains 10 elements, so length of cartesian product is $10^7$.You can see code at `bench.js`.
 | version   | time(ms) |
 | :-------- | :------- |
-| function  | 7126     |
-| generator | 5304     |
+| function  | 6862     |
+| generator | 5950     |
 
-__26% faster!!__
+__14% faster!!__
 
 When I tried bench with more arguments, function version caused memory leak, unlike generator.
 
