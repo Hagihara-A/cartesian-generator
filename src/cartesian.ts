@@ -1,13 +1,9 @@
 export function* cartesian(
   ...args: number[][]
 ): Generator<number[], void, undefined> {
-  const len = args.length;
-  const [head, ...rest] = args;
-  if (len === 1) {
-    for (const h of head) {
-      yield [h];
-    }
-  } else {
+  if (args.length === 0) yield [];
+  else {
+    const [head, ...rest] = args;
     for (const h of head) {
       const restIter = cartesian(...rest);
       for (const r of restIter) {
